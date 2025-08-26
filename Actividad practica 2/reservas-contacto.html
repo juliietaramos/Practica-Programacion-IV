@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas y contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Sabores del mundo</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a class="active" href="reservas-contacto.html">Reservas y contacto</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Reservá tu mesa</h2>
+        <form action="">
+            <div class="Formulario">
+                <p>Datos de contacto</p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+
+                <label for="correo-electronico">Correo electronico</label>
+                <input type="email" id="correo-electronico" name="correo-electronico" required
+                    placeholder="tu@correo.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="+54 9 ...">
+            </div>
+            <div class="Formulario">
+                <p>Detalles de la reserva</p>
+                <label for="cantidad-de-personas">Cantidad de personas</label>
+                <input type="number" id="cantidad-de-personas" name="cantidad-de-personas" required min="1">
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <input id="Enviar" type="submit" value="Enviar">
+        </form>
+
+        <h2>Reservas del día (simulación)</h2>
+        <table class="Reservas">
+            <thead>
+                <tr>
+                    <th>Mesa</th>
+                    <th>Nombre</th>
+                    <th>Personas</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>María P.</td>
+                    <td>2</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Juan R.</td>
+                    <td>4</td>
+                    <td>22:00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lucía G.</td>
+                    <td>3</td>
+                    <td>21:00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bloqueada por evento privado</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Esteban Q.</td>
+                    <td>5</td>
+                    <td>20:30</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="Footer-contacto">
+        <p>Av. Dorrego 281, Ciudad Mar del Plata - Tel <a href="tel:+54 223 0000-0000">+54 223 0000-0000</a>
+        </p>
+        <p>Siguenos:
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> -
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> -
+            <a href="https://x.com/" target="_blank">X/Twitter</a> -
+            <a
+                href="https://docs.google.com/document/d/1Ydfvh6ESGPQLGB9laZOki4qGZELn2u2KWmisKq1sAu4/edit?tab=t.0#heading=h.y56r9pcdi97e" target="_blank">Consigna
+                del TP</a>
+        </p>
+        <p>&copy; 2023 Sabores del mundo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

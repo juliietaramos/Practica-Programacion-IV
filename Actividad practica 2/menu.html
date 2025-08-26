@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Sabores del mundo</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="menu.html">Menu</a></li>
+                <li><a href="reservas-contacto.html">Reservas y contacto</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Nuestra carta</h2>
+        <p id="Descripcion">Platos disponibles por categoría</p>
+        <table class="Carta">
+            <thead>
+                <tr>
+                    <th>Plato</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Calorias</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="Tipo-de-plato" colspan="4">Entradas</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Bruschettas</td>
+                    <td>Tomate, albahaca y aceite de oliva</td>
+                    <td>$4.500</td>
+                    <td>220 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato" data-recomendado="true">Empanadas criollas</td>
+                    <td>Carne suave, cebolla y especias</td>
+                    <td>$3.800</td>
+                    <td>260 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Sopa del día</td>
+                    <td>Verduras de estación</td>
+                    <td>$3.200</td>
+                    <td>180 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Tipo-de-plato" colspan="4">Platos principales</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Ravioles caseros</td>
+                    <td>De ricota y espinaca con salsa fileto</td>
+                    <td>$7.900</td>
+                    <td>640 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Curry de Pollo</td>
+                    <td>Leche de coco, jengibre y basmati</td>
+                    <td>$8.400</td>
+                    <td>710 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato" data-recomendado="true">Risotto de hongos</td>
+                    <td>Arborio, hongos y parmesano</td>
+                    <td>$8.900</td>
+                    <td>690 kcal</td>
+                </tr>
+
+                <tr>
+                    <td class="Tipo-de-plato" colspan="4">Postres</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Tiramisu</td>
+                    <td>Clásico italiano con cacao</td>
+                    <td>$3.900</td>
+                    <td>420 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato" data-recomendado="true">Flan casero</td>
+                    <td>Con crema y dulce de leche</td>
+                    <td>$3.600</td>
+                    <td>380 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Helado artesanal</td>
+                    <td>2 bochas a elección</td>
+                    <td>$3.500</td>
+                    <td>300 kcal</td>
+                </tr>
+
+                <tr>
+                    <td class="Tipo-de-plato" colspan="4">Bebidas</td>
+                </tr>
+                <tr id="limonada">
+                    <td class="Plato" rowspan="3">Limonada</td>
+                    <td>Natural con menta</td>
+                    <td>$2.800 (S)</td>
+                    <td>90 kcal</td>
+                </tr>
+                <tr>
+                    <td data-recomendado="true">Natural con menta</td>
+                    <td class="precio-limonada">$3.200 (M)</td>
+                    <td class="kcal-limonada">120 kcal</td>
+                </tr>
+                <tr>
+                    <td>Natural con menta</td>
+                    <td class="precio-limonada">$3.600 (L)</td>
+                    <td class="kcal-limonada">120 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Café + mini dulce</td>
+                    <td>Espresso o americano con pastelito</td>
+                    <td></td>
+                    <td>210 kcal</td>
+                </tr>
+                <tr>
+                    <td class="Plato">Agua sin gas
+                    <td></td>
+                    <td>$1.900</td>
+                    <td>0 kcal</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <aside class="Plato-destacado">
+        <h2>Plato destacado</h2>
+        <p> <strong>Curry de pollo</strong> → aroma especiado y cremoso.</p>
+        <p>Lunes cerrado</p>
+    </aside>
+
+    <footer class="Footer-menu">
+        <p>Av. Dorrego 281, Ciudad Mar del Plata - Tel <a href="tel:+54 223 0000-0000">+54 223 0000-0000</a></p>
+        <p>Siguenos:
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> -
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> -
+            <a href="https://x.com/" target="_blank">X/Twitter</a> -
+            <a
+                href="https://docs.google.com/document/d/1Ydfvh6ESGPQLGB9laZOki4qGZELn2u2KWmisKq1sAu4/edit?tab=t.0#heading=h.y56r9pcdi97e" target="_blank">Consigna
+                del TP</a>
+        </p>
+        <p>&copy; 2023 Sabores del mundo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

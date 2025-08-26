@@ -1,0 +1,107 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #333;
+}
+
+header {
+    background-color: #cc9966;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #5c3917;
+}
+
+header h1 a {
+    color: #5c3917;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #2d2823;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: #5c3917;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3 ease;
+}
+
+main {
+    flex: 1;
+}
+
+.contenedor-externo{
+    height: 400px;
+    display: table;
+    width: 100%;
+}
+
+.contenedor-de-formulario {
+    margin: 20px;
+    padding: 15px;
+    width: 200px;
+    height: auto;
+    background-color: wheat;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+input {
+    width: 150px;
+}
+
+footer {
+    background-color: rgb(35, 22, 6);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+}

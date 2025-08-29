@@ -423,3 +423,126 @@ console.log(nuevoArregloAlumnos);
 
 let alumnosAprobados = nuevoArregloAlumnos.filter(a => a.promedioNotas >= 6);
 console.log(alumnosAprobados);
+
+
+
+//PARTE 3:
+// 14. Crear un arreglo productos con objetos { id, nombre, precio, stock }. Luego definir una función comprar(id, cantidad, callbackExito, callbackError) que:
+//      *Si el producto no existe, ejecutar callbackError con un mensaje “Producto no encontrado”
+//      *Si hay stock suficiente → que descuente y ejecute callbackExito mostrando el detalle de la compra.
+//      *Si no hay stock → ejecute callbackError con mensaje “no hay stock suficiente.
+//      *Probar la función con distintas compras.
+const arregloProductos = [
+    {
+        id: 1,
+        nombre: "Leche",
+        precio: 950,
+        stock: 60
+    },
+    {
+        id: 2,
+        nombre: "Pan de molde",
+        precio: 1200,
+        stock: 25
+    },
+    {
+        id: 3,
+        nombre: "Queso Cremoso",
+        precio: 4500,
+        stock: 15
+    },
+    {
+        id: 4,
+        nombre: "Gaseosa Cola 1.5L",
+        precio: 1800,
+        stock: 40
+    },
+    {
+        id: 5,
+        nombre: "Galletitas de chocolate",
+        precio: 1300,
+        stock: 30
+    },
+    {
+        id: 6,
+        nombre: "Café molido",
+        precio: 3200,
+        stock: 20
+    }
+];
+
+function error(mensaje) {
+    console.log(mensaje);
+}
+function exito(detalle) {
+    console.log(detalle);
+}
+function comprar(id, cantidad, callbackExito, callbackError) {
+    let productoSeleccionado = arregloProductos.find(p => p.id === id)
+    if (!productoSeleccionado) {
+        callbackError("Producto no encontrado.");
+    } else {
+        if (productoSeleccionado.stock > cantidad) {
+            productoSeleccionado.stock -= cantidad;
+            let detalleCompra = {
+                id: productoSeleccionado.id,
+                nombre: productoSeleccionado.nombre,
+                cantidadSolicitada: cantidad,
+                total: cantidad * productoSeleccionado.precio
+            }
+            console.log(`Detalle de la compra: `);
+            callbackExito(detalleCompra);
+        } else {
+            callbackError("No hay suficiente stock.")
+        }
+    }
+}
+
+comprar(1, 30, exito, error);
+comprar(6, 40, exito, error);
+comprar(8, 25, exito, error);
+
+
+
+// 15. Utilizar el arreglo de productos del ejercicio anterior, y crear una función aplicarDescuento(id, porcentaje, callbackExito, callbackError) que haga lo siguiente:
+//      *Buscar el producto por su id.
+//      *Si no existe, ejecutar callbackError con un mensaje “Producto no encontrado”.
+//      *Si el porcentaje de descuento no es válido (≤0 o >100), ejecutar callbackError con un mensaje “Porcentaje inválido”.
+//      *Si todo es correcto, aplicar el descuento sobre el precio del producto y ejecutar callbackExito mostrando el nombre del producto y su nuevo precio.
+// A continuación, invocar a aplicarDescuento() y dentro de su callback de éxito, llamar/invocar a comprar() con sus propios callbacks de éxito y error.
+function aplicarDescuento(id, porcentaje, callbackExito, callbackError) {
+    productoSeleccionado = arregloProductos.find(p => p.id === id)
+    if (!productoSeleccionado) {
+        callbackError("Producto no encontrado.")
+    } else {
+        if (porcentaje <= 0 || porcentaje >= 100) {
+            callbackError("Porcentaje invalido");
+        } else {
+            productoSeleccionado.precio -= productoSeleccionado.precio * porcentaje / 100;
+            callbackExito(productoSeleccionado)
+            comprar(id, 23, callbackExito, callbackError)
+        }
+    }
+}
+
+aplicarDescuento(1, 25, exito, error);
+
+
+
+// 16. Crear una función filtrarPorStock(minStock, callbackExito, callbackError) que:
+//     *Filtre todos los productos cuyo stock sea mayor o igual a minStock.
+//     *Si existen productos que cumplen la condición, ejecutar callbackExito pasando el listado filtrado.
+//     *Si no hay productos que cumplan la condición, ejecutar callbackError con un mensaje “No hay productos con ese stock”.
+//     *Probar la función con distintos valores de minStock: Mostrar los productos disponibles usando un callback de éxito y Manejar los posibles errores usando un callback de error.
+function filtrarPorStock(minStock, callbackExito, callbackError) {
+    const productosConStock = arregloProductos.filter(p => p.stock >= minStock);
+    if(productosConStock.length===0){
+        callbackError("No hay productos con este stock.")
+    }else{
+        console.log(`Productos con stock:`);
+        callbackExito(productosConStock);
+    }
+}
+
+filtrarPorStock(45, exito, error);
+filtrarPorStock(5, exito, error);

@@ -1,0 +1,39 @@
+{
+  "usuarios": [
+    {
+      "id": "09d9",
+      "nombre": "Julieta",
+      "email": "julieta@gmail.com"
+    },
+    {
+      "id": "fd95",
+      "nombre": "Luisa",
+      "email": "luisa@gmail.com"
+    },
+    {
+      "id": "f296",
+      "nombre": "Daniel",
+      "email": "daniel@gmail.com"
+    },
+    {
+      "id": "5d48",
+      "nombre": "Matias",
+      "email": "matias@gmail.com"
+    },
+    {
+      "id": "45df",
+      "nombre": "Magdalena",
+      "email": "magdalena@gmail.com"
+    },
+    {
+      "id": "e022",
+      "nombre": "Charly",
+      "email": "charly@gmail.com"
+    },
+    {
+      "id": "4db2",
+      "nombre": "Luisa",
+      "email": "luisa@mail.com"
+    }
+  ]
+}

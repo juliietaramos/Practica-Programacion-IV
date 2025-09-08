@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ECF0F1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    gap: 5px
+}
+
+header {
+    color: #FFFFFF;
+    grid-area: header;
+    background-color: #2C3E50;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    background-color: #FFFFFF;
+}
+
+#formulario {
+    background-color: #93949d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.claseFormulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #7ca7c3;
+    padding: 20px;
+    border-radius: 2em;
+    border: 1px solid;
+    width: 70%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 0.5em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+form button {
+    padding: 0.5em;
+    margin: 0 4em 0 4em;
+    border-radius: 1em;
+    border: 1px dashed;
+}
+
+form button:hover {
+    background-color: aquamarine;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #BDC3C7;
+}
+
+aside h2 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+ul {
+    list-style: none;
+    margin: 1em;
+
+}
+
+ul li {
+    padding-bottom: 1em;
+}
+
+li button {
+    background-color: rgb(211, 110, 110);
+    border: 1px dashed;
+    padding: 4px;
+    border-radius: 1em;
+}
+
+li button:hover {
+    background-color: rgb(230, 79, 79);
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    grid-area: footer;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer a:visited {
+    color: #808080;
+}

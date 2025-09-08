@@ -1,0 +1,34 @@
+{
+  "extraterrestres": [
+    {
+      "nombre": "Viejo Xelara",
+      "planeta": "Viejo Andromeda",
+      "nivelPoder": "22222222",
+      "id": "2"
+    },
+    {
+      "nombre": "Nuevo Bloop",
+      "planeta": "Nuevo Saturno",
+      "nivelPoder": "44444",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "nombre": "Lionel Messi",
+      "planeta": "Tierra",
+      "nivelPoder": 100
+    },
+    {
+      "id": "eb42",
+      "nombre": "Max",
+      "planeta": "Red Bull",
+      "nivelPoder": 33
+    },
+    {
+      "id": "4f36",
+      "nombre": "Alf",
+      "planeta": "Melmac",
+      "nivelPoder": "4"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simulacro parcial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Extraterrestres</h1>
+    </header>
+    <nav>NAV</nav>
+    <main id="formulario">
+        <article class="claseFormulario">
+            <h2>Formulario agregar:</h2>
+            <form action="" id="formularioAgregar">
+                <input type="text" id="nombre" placeholder="Nombre: " required>
+                <input type="text" id="planeta" placeholder="Planeta: " required>
+                <input type="number" id="nivelPoder" placeholder="Nivel de poder: " required>
+                <button id="btnEnviar">Enviar</button>
+            </form>
+        </article>
+        <article class="claseFormulario">
+            <h2>Formulario modificar:</h2>
+            <form action="" id="formularioModificar">
+                <input type="text" id="identificador" placeholder="Id del extraterrestre:" required>
+                <input type="text" id="nombreModificado" placeholder="Nuevo nombre:" required>
+                <input type="text" id="planetaModificado" placeholder="Nuevo planeta:" required>
+                <input type="number" placeholder="Nuevo nivel de poder:" id="poderModificado" required>
+                <button id="btnModificar">Modificar</button>
+            </form>
+        </article>
+    </main>
+    <aside>
+        <div>
+            <h2>Lista:</h2>
+            <ul id="lista">
+            </ul>
+        </div>
+    </aside>
+    <footer><a href="https://docs.google.com/document/d/13eBA3zY2-Vee7tLodF1cphpJsdunt5w-VKjoVFw1NlE/edit?tab=t.0">Link de la actividad</a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

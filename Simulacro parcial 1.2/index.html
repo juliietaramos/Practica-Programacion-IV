@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dioses griegos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dioses griegos</h1>
+        <nav>NAV</nav>
+    </header>
+    <main>
+        <article id="articleAñadir">
+            <h2>Agregar un Dios:</h2>
+            <form action="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Zeus" id="nombre" required>
+
+                <label for="dominio">Dominio:</label>
+                <input type="text" placeholder="Cielo" id="dominio" required>
+
+                <label for="simbolo">Simbolo</label>
+                <input type="text" placeholder="Rayo" id="simbolo" required>
+
+                <label for="poder">Poder:</label>
+                <input type="number" placeholder="100" id="poder" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" placeholder="Olimpo" id="ciudad" required>
+
+                <button id="btnAñadir">Añadir</button>
+                <button id="btnCancelarAñadir">Cancelar</button>
+            </form>
+        </article>
+        <article id="articleModificar" hidden>
+            <h2>Modificar un Dios:</h2>
+            <form action="">
+                <input type="text" id="idDios" hidden>
+
+                <label for="nombreModificado">Nombre:</label>
+                <input type="text" placeholder="Zeus" id="nombreModificado" required>
+
+                <label for="dominioModificado">Dominio:</label>
+                <input type="text" placeholder="Cielo" id="dominioModificado" required>
+
+                <label for="simboloModificado">Simbolo</label>
+                <input type="text" placeholder="Rayo" id="simboloModificado" required>
+
+                <label for="poderModificado">Poder:</label>
+                <input type="number" placeholder="100" id="poderModificado" required>
+
+                <label for="ciudadModificada">Ciudad:</label>
+                <input type="text" placeholder="Olimpo" id="ciudadModificada" required>
+
+                <button id="btnModificar">Guardar cambios</button>
+                <button id="btnCancelarModificar">Cancelar</button>
+            </form>
+        </article>
+        <article>
+
+            <h3>Ingrese un parametro para filtrar:</h3>
+            <input type="text" placeholder="Dominio" id="filtro">
+            <button id="btnFiltrar">Filtrar</button>
+            <ul id="listaFiltrada" hidden></ul>
+
+        </article>
+    </main>
+    <aside>
+        <section>
+            <h2>Lista de dioses:</h2>
+            <ul id="listaCompleta"></ul>
+        </section>
+        <section>
+            <button id="btnNombreDominio">Nombre y dominio</button>
+            <ul id="listaNombreDominio" hidden></ul>
+        </section>
+
+    </aside>
+    <footer>
+        <p>Julieta Ramos</p>
+        <p><a href="https://docs.google.com/document/d/1rhVwdARdVHxvYd18yfk-spqMWSvYZtdjjabwM06YqTM/edit?tab=t.0">Link de la actividad</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

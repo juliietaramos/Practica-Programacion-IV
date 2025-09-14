@@ -1,0 +1,131 @@
+:root {
+    --verde-gris: #667761;
+    --gris-verde: #545E56;
+    --lila-viejo: #917C78;
+    --rosa-viejo: #B79492;
+    --casi-blanco: #EAE1DF;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--verde-gris);
+    color: var(--casi-blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+header {
+    background-color: var(--gris-verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lila-viejo);
+    width: 70%;
+    margin: 1em;
+}
+
+article {
+    background-color: var(--rosa-viejo);
+    border-radius: 2em;
+    width: 80%;
+    margin: 1em;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+article:not([hidden]){
+    display: flex;
+}
+
+[hidden]{
+    display: none !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.5em;
+}
+
+button:hover{
+    background-color: #917c7874;
+    cursor: pointer;
+}
+
+aside {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: var(--rosa-viejo);
+    gap: 20px;
+    padding: 1em 0 1em 0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    background-color: var(--lila-viejo);
+    width: 80%;
+    padding: 1em 0 1em 0;
+}
+
+section h2{
+    margin:0;
+}
+
+li {
+    list-style: none;
+    padding-top: 1em;
+}
+
+ul {
+    padding: 0 1em 0 1em;
+}
+
+.Supremo::before{
+    content: "⩚: ";
+}
+.Poderoso::before{
+    content: "⩕: ";
+}
+.Legendario::before{
+    content: "⩙: ";
+}
+.Debil::before{
+    content: "⩔: ";
+}
+
+footer {
+    background-color: var(--gris-verde);
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+a{
+    color: var(--casi-blanco);
+}
+
